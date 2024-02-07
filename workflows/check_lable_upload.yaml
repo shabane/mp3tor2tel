@@ -1,0 +1,19 @@
+name: check-label-then-download-and-upload
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  checkLabel:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, 'upload') || contains(github.event.issue.labels.*.name, 'download')
+    steps:
+      - name: setup python
+        uses: actions/setup-python@v4
+
+      - run: python rain.py
+
+      - name: Close Issue
+        uses: peter-evans/close-issue@v2
+        with:
+          comment: Thanks for your contribution, we added this chapter to the book :)
