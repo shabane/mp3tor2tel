@@ -17,9 +17,9 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v4
 
-      - run: python rain.py
-
       - run: apt install aria2
+
+      - run: python rain.py
 
       - name: Close Issue
         uses: peter-evans/close-issue@v2
