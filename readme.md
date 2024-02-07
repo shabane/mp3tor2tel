@@ -16,7 +16,7 @@ it mean that github will act as a server to this.
 
 1. well you should find a music torrent magnet that have enough seeds, i seggust you to use this [site](https://ext.to/).
 
-2. then [open an issue](https://github.com/shabane/mp3tor2tel/issues/new), give any title you want to, but in the description section you should write **torrent magnet**, **your telegram bot token** and **telegram chatID** in order. it should look like this:
+2. then [open an issue](https://github.com/shabane/mp3tor2tel/issues/new?assignees=&labels=download&projects=&template=download-template.md&title=new_download), give any title you want to, but in the description section you should write **torrent magnet**, **your telegram bot token** and **telegram chatID** in order. it should look like this:
 
 ```md
 magnet
